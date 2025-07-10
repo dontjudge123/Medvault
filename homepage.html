@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MedVault - Secure Health Records</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    :root {
+      --primary: #4f46e5;
+      --secondary: #6366f1;
+      --bg: #f9fafb;
+      --text: #1f2937;
+      --white: #ffffff;
+      --gray: #6b7280;
+      --card-bg: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--white);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    header h1 {
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: var(--gray);
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--primary);
+    }
+
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 80px 20px;
+      background: linear-gradient(to right, var(--primary), var(--secondary));
+      color: var(--white);
+    }
+
+    .hero h2 {
+      font-size: 42px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      max-width: 600px;
+      margin-bottom: 30px;
+    }
+
+    .cta-button {
+      background-color: var(--white);
+      color: var(--primary);
+      padding: 12px 24px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    .cta-button:hover {
+      background-color: #e0e7ff;
+    }
+
+    .features {
+      padding: 60px 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .feature-card {
+      background: var(--card-bg);
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .feature-card i {
+      font-size: 30px;
+      color: var(--primary);
+      margin-bottom: 20px;
+    }
+
+    .feature-card h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .feature-card p {
+      color: var(--gray);
+      font-size: 15px;
+    }
+
+    footer {
+      background: #111827;
+      color: #d1d5db;
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>MedVault</h1>
+    <nav>
+      <a href="login.html" target="_blank">Login</a>
+      <a href="register.html" target="_blank">Register</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Secure, Effortless Health Record Management</h2>
+    <p>MedVault helps you manage your health data with advanced encryption, clean design, and a patient-first experience.</p>
+    <a href="register.html" class="cta-button">Get Started</a>
+  </section>
+
+  <section class="features">
+    <div class="feature-card">
+      <i class="fas fa-lock"></i>
+      <h3>End-to-End Encryption</h3>
+      <p>Your health data is always private and secure using industry-grade encryption standards.</p>
+    </div>
+
+    <div class="feature-card">
+      <i class="fas fa-user-friends"></i>
+      <h3>User-Centric Interface</h3>
+      <p>Simple, intuitive layouts for patients and healthcare professionals to navigate with ease.</p>
+    </div>
+
+    <div class="feature-card">
+      <i class="fas fa-heart"></i>
+      <h3>Built for Trust</h3>
+      <p>Driven by privacy, trust, and accessibility—everything you expect from a modern healthcare platform.</p>
+    </div>
+
+    <div class="feature-card">
+      <i class="fas fa-mobile-alt"></i>
+      <h3>Cross-Device Compatible</h3>
+      <p>Access your health records anytime, anywhere—from mobile to desktop seamlessly.</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 MedVault. All rights reserved.
+  </footer>
+</body>
+
+</html>

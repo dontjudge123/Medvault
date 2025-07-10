@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login - MedVault</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet"/>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: #fff;
+    }
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .login-wrapper {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 20px;
+      padding: 40px 30px;
+      backdrop-filter: blur(15px);
+      box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+      width: 100%;
+      max-width: 400px;
+      animation: fadeIn 1.5s ease forwards;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(-20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    .login-wrapper h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-weight: 600;
+      font-size: 24px;
+    }
+
+    .login-form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .login-form input {
+      padding: 12px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      border: none;
+      background: rgba(255, 255, 255, 0.1);
+      color: #fff;
+      font-size: 15px;
+      transition: 0.3s;
+    }
+
+    .login-form input::placeholder {
+      color: #ccc;
+    }
+
+    .login-form input:focus {
+      outline: none;
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    .login-form button {
+      padding: 12px;
+      background-color: #4cafef;
+      border: none;
+      color: white;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .login-form button:hover {
+      background-color: #2196f3;
+    }
+
+    .links {
+      margin-top: 15px;
+      font-size: 14px;
+      text-align: center;
+    }
+
+    .links a {
+      color: #ccc;
+      text-decoration: none;
+      display: block;
+      margin-top: 8px;
+      transition: 0.3s;
+    }
+
+    .links a:hover {
+      color: #ffffff;
+      text-decoration: underline;
+    }
+
+    .logo {
+      display: block;
+      margin: 0 auto 20px;
+      max-width: 100px;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 10px;
+      width: 100%;
+      text-align: center;
+      font-size: 13px;
+      color: #bbb;
+    }
+
+    @media (max-width: 500px) {
+      .login-wrapper {
+        margin: 0 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="login-wrapper">
+    <img src="medvault.png" alt="MedVault Logo" class="logo">
+    <h2>Login to MedVault</h2>
+    <form class="login-form" action="#" method="post">
+      <input type="text" name="username" placeholder="Username" required />
+      <input type="password" name="password" placeholder="Password" required />
+      <button type="submit">Login</button>
+    </form>
+
+    <div class="links">
+      <a href="#">Forgot Password?</a>
+      <a href="#">Create New Password</a>
+      <a href="register.html">Don't have an account? Sign up</a>
+      <a href="homepage.html">← Back to Home</a>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2023 MedVault. All rights reserved.
+  </footer>
+</body>
+</html>
